@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  # ҳ��ģ��
+  thymeleaf:
+    # ����ÿ���޸�ҳ�涼����,��Ϊfalse��Ĭ��true
+    cache: false
+    content-type: text/html
+    # �����ʽ
+    encoding: UTF-8
+    # ���ҳ���ļ���Ŀ¼
+    prefix: classpath:/templates/views/
+    # ҳ���ļ���׺��
+    suffix: .html
+    # HTML5�ϸ�У��ܷ��ˣ��ĳ�LEGACYHTML5,Ĭ��ΪHTML5
+    mode: HTML5
+
+
+
+
+
