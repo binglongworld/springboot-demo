@@ -1,0 +1,64 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.6.1:3307/springboot?useUnicode=true&character-encoding=utf-8&serverTimezone=Asia/Shanghai
+    username: springboot
+    password: SprinGbooT
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    hikari:
+#      minimum-idle: 5  #最小空闲连接
+#      maximum-pool-size: 20  #最大连接数
+#      idle-timeout: 600000  #空闲连接超时时间
+#      max-lifetime: 1800000  #连接最大存活时间
+#      connection-timeout: 30000  #连接超时时间
+#      connection-test-query: SELECT 1  #用于测试连接是否可用的查询语句
+
+    # druid数据库连接池
+    druid:
+      initial-size: 5  #连接池初始化大小
+      min-idle: 10  #最小空闲连接数
+      max-active: 20  #最大连接数
+      validation-query: SELECT 1
+      filters: stat,wall  #配置监控统计用的拦截器(stat对应SQL监控，wall对应SQL防火墙)
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        reset-enable: true
+        login-username: druid
+        login-password: druid
+
+  # Redis缓存
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    lettuce:
+      pool:
+        max-idle: 8
+        max-active: 8
+        max-wait: 1ms
+        min-idle: 0
+      shutdown-timeout: 100ms
+
+  # 页面模板
+  thymeleaf:
+    # 不想每次修改页面都重启,改为false，默认true
+    cache: false
+    content-type: text/html
+    # 编码格式
+    encoding: UTF-8
+    # 存放页面文件的目录
+    prefix: classpath:/templates/
+    # 页面文件后缀名
+    suffix: .html
+    # HTML5严格校验很烦人，改成LEGACYHTML5,默认为HTML5
+    mode: HTML5
+
+# 自定义参数
+book:
+  name: "三国演义"
+  author: "施耐庵"
+
+
+
