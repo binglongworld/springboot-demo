@@ -1,0 +1,44 @@
+
+server:
+  port: 8081
+#  servlet:
+#    encoding: UTF-8
+#    enabled: true
+#    force: true
+
+spring:
+#  cache.ehcache.config: classpath:ehcache-1.xml
+  cache.ehcache.config: classpath:ehcache-2.xml
+  profiles:
+    include: db
+    active: dev
+#    2.4版本之后的写法
+#    group:
+#      "dev": "db"
+#      "prod": "db"
+#      "test": "db"
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+book:
+  date: 2021-3-31
+
+swagger:
+  ui-config:
+    operations-sorter: method
+
+logging:
+  level:
+    root: debug
+    org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: trace
+    com.hl.chapter27.mapper: debug
+  
+
+
+
+
+
+
+
+

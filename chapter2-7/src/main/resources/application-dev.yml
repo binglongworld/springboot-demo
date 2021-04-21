@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.6.1:3307/springboot?useUnicode=true&character-encoding=utf-8&serverTimezone=Asia/Shanghai
+    username: springboot
+    password: SprinGbooT
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    hikari:
+#      minimum-idle: 5  #最小空闲连接
+#      maximum-pool-size: 20  #最大连接数
+#      idle-timeout: 600000  #空闲连接超时时间
+#      max-lifetime: 1800000  #连接最大存活时间
+#      connection-timeout: 30000  #连接超时时间
+#      connection-test-query: SELECT 1  #用于测试连接是否可用的查询语句
+    druid:
+      initial-size: 5  #连接池初始化大小
+      min-idle: 10  #最小空闲连接数
+      max-active: 20  #最大连接数
+      validation-query: SELECT 1
+      filters: stat,wall  #配置监控统计用的拦截器(stat对应SQL监控，wall对应SQL防火墙)
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        reset-enable: true
+        login-username: druid
+        login-password: druid
+
+book:
+  name: "三国演义"
+  author: "施耐庵"
+
+
+
