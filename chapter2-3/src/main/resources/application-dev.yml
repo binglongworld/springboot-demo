@@ -1,0 +1,44 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    primary:
+      jdbc-url: jdbc:mysql://localhost:3307/springboot?useUnicode=true&character-encoding=utf-8&serverTimezone=Asia/Shanghai
+      username: springboot
+      password: SprinGbooT
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      druid:
+        initial-size: 5  #连接池初始化大小
+        min-idle: 10  #最小空闲连接数
+        max-active: 20  #最大连接数
+        validation-query: SELECT 1
+        filters: stat,wall  #配置监控统计用的拦截器(stat对应SQL监控，wall对应SQL防火墙)
+        stat-view-servlet:
+          enabled: true
+          url-pattern: /druid/*
+          reset-enable: true
+          login-username: druid
+          login-password: druid
+    secondary:
+      jdbc-url: jdbc:mysql://localhost:3307/springboot2?useUnicode=true&character-encoding=utf-8&serverTimezone=Asia/Shanghai
+      username: springboot2
+      password: SprinGbooT
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      druid:
+        initial-size: 5  #连接池初始化大小
+        min-idle: 10  #最小空闲连接数
+        max-active: 20  #最大连接数
+        validation-query: SELECT 1
+        filters: stat,wall  #配置监控统计用的拦截器(stat对应SQL监控，wall对应SQL防火墙)
+        stat-view-servlet:
+          enabled: true
+          url-pattern: /druid/*
+          reset-enable: true
+          login-username: druid
+          login-password: druid
+
+
+
+
+
