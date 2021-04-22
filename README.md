@@ -1,40 +1,39 @@
-<-- jdk动态代理 -->
-<module>chapter1-1</module>
-<-- Java基础功能 -->
-<module>chapter1-2</module>
-<-- cglib动态代理 -->
-<module>chapter1-3</module>
-<-- 过滤器、拦截器、监听器 -->
-<module>chapter1-4</module>
-<-- 使用druid数据库连接池 -->
-<module>chapter2-1</module>
-<-- 使用Mybatis -->
-<module>chapter2-2</module>
-<-- Mybatis多数据源 -->
-<module>chapter2-3</module>
-<-- Mybatis事务处理 -->
-<module>chapter2-4</module>
-<-- 使用springboot自带缓存ConcurrentMap -->
-<module>chapter2-5</module>
-<-- 使用Ehcache缓存 -->
-<module>chapter2-6</module>
-<-- Ehcache集群 -->
-<module>chapter2-7</module>
-<-- Redis缓存 -->
-<module>chapter2-8</module>
-<-- Jedis RedisTemplate JedisPool -->
-<module>chapter2-9</module>
-<-- Thymeleaf模板引擎 -->
-<module>chapter3-1</module>
-<-- 使用 ECharts 绘制各种华丽的数据图表 -->
-<module>chapter3-2</module>
-<-- 文件上传 -->
-<module>chapter3-3</module>
-<-- 多文件上传 -->
-<module>chapter3-4</module>
-<-- 使用AOP面向切面编程 -->
-<module>chapter3-5</module>
-<-- 整合SpringSecurity -->
-<module>chapter3-6</module>
-<-- FreeMarker页面模板引擎 -->
-<module>chapter3-7</module>
+chapter1-1: jdk动态代理 
+			
+chapter1-2: Java基础功能 
+			
+chapter1-3: cglib动态代理 
+			
+chapter1-4: 过滤器、拦截器、监听器 
+			
+chapter2-1: 使用druid数据库连接池 
+			
+chapter2-2: 使用Mybatis 
+			
+chapter2-3: Mybatis多数据源 
+			
+chapter2-4: Mybatis事务处理 
+			
+chapter2-5: 使用springboot自带缓存Con
+			
+chapter2-6: 使用Ehcache缓存 
+			
+chapter2-7: Ehcache集群 
+			
+chapter2-8: Redis缓存 
+			
+chapter2-9: Jedis RedisTemplate Jedis
+			
+chapter3-1: Thymeleaf模板引擎 
+			
+chapter3-2: 使用 ECharts 绘制各种华丽
+			
+chapter3-3: 文件上传 
+			
+chapter3-4: 多文件上传 
+			
+chapter3-5: 使用AOP面向切面编程 
+			
+chapter3-6: 整合SpringSecurity 
+			
+chapter3-7: FreeMarker页面模板引擎 
