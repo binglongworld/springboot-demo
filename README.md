@@ -26,7 +26,7 @@ chapter2-9: Jedis RedisTemplate Jedis
 			
 chapter3-1: Thymeleaf模板引擎 
 			
-chapter3-2: 使用 ECharts 绘制各种华丽的数据图标
+chapter3-2: 使用 ECharts 绘制各种华丽的数据图表
 			
 chapter3-3: 文件上传 
 			
