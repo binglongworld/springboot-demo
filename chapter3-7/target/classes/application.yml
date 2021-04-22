@@ -1,0 +1,13 @@
+spring:
+  freemarker:
+    # ����ģ���׺��
+    suffix: .ftl
+    # �����ĵ�����
+    content-type: text/html
+    # ����ҳ������ʽ
+    charset: UTF-8
+    # ����ҳ�滺��
+    cache: false
+    # ����ģ���ļ�·����Ĭ����templates���˴�����Ϊviews
+    template-loader-path: classpath:/templates/views
+
