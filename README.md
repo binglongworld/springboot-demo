@@ -14,7 +14,7 @@ chapter2-3: Mybatis多数据源
 			
 chapter2-4: Mybatis事务处理 
 			
-chapter2-5: 使用springboot自带缓存Con
+chapter2-5: 使用springboot自带缓存ConcurrentMap
 			
 chapter2-6: 使用Ehcache缓存 
 			
@@ -26,7 +26,7 @@ chapter2-9: Jedis RedisTemplate Jedis
 			
 chapter3-1: Thymeleaf模板引擎 
 			
-chapter3-2: 使用 ECharts 绘制各种华丽
+chapter3-2: 使用 ECharts 绘制各种华丽的数据图标
 			
 chapter3-3: 文件上传 
 			
